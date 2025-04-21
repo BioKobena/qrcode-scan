@@ -86,9 +86,8 @@ const QRScanner = () => {
   const handleScan = (result: BarcodeScanningResult) => {
     if (!scanned && result.data) {
       setScanned(true);
-      router.push("/menu");
-      Alert.alert("✅ Code Scanné", `${result.data}`);
-      // Reset scanning after delay
+      
+      Alert.alert("Code Scanné", `${result.data}`);
       setTimeout(() => setScanned(false), 3000);
     }
   };

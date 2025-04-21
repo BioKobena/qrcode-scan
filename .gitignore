@@ -8,7 +8,7 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
-./app/menu.tsx
+app/menu.tsx
 # Native
 *.orig.*
 *.jks
